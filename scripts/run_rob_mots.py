@@ -52,7 +52,7 @@ if __name__ == '__main__':
     else:
         config['SPLIT_TO_EVAL'] = config['ROBMOTS_SPLIT']
 
-    metrics_config = {'METRICS': ['HOTA']}
+    metrics_config = {'METRICS': ['HOTA' , 'Identity', 'VACE', "JAndF", 'CLEAR' ]}
     eval_config = {k: v for k, v in config.items() if k in config.keys()}
     dataset_config = {k: v for k, v in config.items() if k in config.keys()}
 
