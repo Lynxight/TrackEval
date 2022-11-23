@@ -20,12 +20,12 @@ class RobMOTS(_BaseDataset):
             'GT_FOLDER': os.path.join(code_path, 'data/gt/rob_mots'),  # Location of GT data
             'TRACKERS_FOLDER': os.path.join(code_path, 'data/trackers/rob_mots'),  # Trackers location
             'OUTPUT_FOLDER': None,  # Where to save eval results (if None, same as TRACKERS_FOLDER)
-            'TRACKERS_TO_EVAL': None,  # Filenames of trackers to eval (if None, all in folder)
-            'SUB_BENCHMARK': None,  # REQUIRED. Sub-benchmark to eval. If None, then error.
+            'TRACKERS_TO_EVAL': 'l',  # Filenames of trackers to eval (if None, all in folder)
+            'SUB_BENCHMARK': 'mots_challenge',  # REQUIRED. Sub-benchmark to eval. If None, then error.
             # ['mots_challenge', 'kitti_mots', 'bdd_mots', 'davis_unsupervised', 'youtube_vis', 'ovis', 'waymo', 'tao']
             'CLASSES_TO_EVAL': None,  # List of classes to eval. If None, then it does all COCO classes.
             'SPLIT_TO_EVAL': 'train',  # valid: ['train', 'val', 'test']
-            'INPUT_AS_ZIP': False,  # Whether tracker input files are zipped
+            'INPUT_AS_ZIP': None,  # Whether tracker input files are zipped
             'PRINT_CONFIG': True,  # Whether to print current config
             'OUTPUT_SUB_FOLDER': 'results',  # Output files are saved in OUTPUT_FOLDER/DATA_LOC_FORMAT/OUTPUT_SUB_FOLDER
             'TRACKER_SUB_FOLDER': 'data',  # Tracker files are in TRACKER_FOLDER/DATA_LOC_FORMAT/TRACKER_SUB_FOLDER

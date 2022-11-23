@@ -17,7 +17,7 @@ class Evaluator:
         """Returns the default config values for evaluation"""
         code_path = utils.get_code_path()
         default_config = {
-            'USE_PARALLEL': False,
+            'USE_PARALLEL': True,
             'NUM_PARALLEL_CORES': 8,
             'BREAK_ON_ERROR': True,  # Raises exception and exits with error
             'RETURN_ON_ERROR': False,  # if not BREAK_ON_ERROR, then returns from function on error

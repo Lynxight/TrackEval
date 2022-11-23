@@ -1,0 +1,9 @@
+Thanks you for participating in the RobMOTS benchmark.
+
+The status of your evaluation is: 
+ERROR, evaluation failed. 
+
+Error message: Unknown error occurred.
+
+If your tracking results evaluated successfully on the evaluation server you can see your results here: 
+https://eval.vision.rwth-aachen.de/vision/
